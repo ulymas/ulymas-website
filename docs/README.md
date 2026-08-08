@@ -13,11 +13,32 @@ The color scheme of the website will be the following:
 - #2596be - color 1
 - #1e696f - color 2
 
-## Desired Project Structure
-
 ## Current Project Structure
 
+ulymas-website/
+
+- backend/
+- docs/
+  - README.md
+- frontend/
+  - images/
+    - ulymas-logo.png
+  - index.html
+  - main.js
+  - style.cc
+
 ## Workflow
+
+- [x] Introduce project to AI assitant.
+- [x] Determine structure, look, and basic features of website.
+- [x] Develop html.
+- [ ] Develop css.
+- [ ] Develop js.
+- [ ] Optimize for mobile screens.
+- [ ] Add social media links.
+- [ ] Show more details on the reviews.
+- [ ] Make contact form actually functional.
+- [ ] Declare project as completed.
 
 ## AI Assitant Reminders
 

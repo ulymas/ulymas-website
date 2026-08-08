@@ -1,5 +1,202 @@
 <!doctype html>
-<html>
-  <head> </head>
-  <body></body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ulysses Massage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img
+            src="images/ulymas-logo.png"
+            alt="Ulysses Massage Logo"
+            class="logo-img"
+          />
+          <span class="logo-text">Ulysses Massage</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" data-en="Home" data-es="Inicio">Home</a></li>
+          <li>
+            <a href="#services" data-en="Services" data-es="Servicios"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#reviews" data-en="Reviews" data-es="Reseñas">Reviews</a>
+          </li>
+          <li>
+            <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+          </li>
+        </ul>
+        <div class="lang-toggle-container">
+          <span class="lang-label">EN</span>
+          <label class="switch">
+            <input type="checkbox" id="lang-toggle" />
+            <span class="slider round"></span>
+          </label>
+          <span class="lang-label">ES</span>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1
+          data-en="Rejuvenate Your Body and Mind"
+          data-es="Rejuvenece Tu Cuerpo y Mente"
+        >
+          Rejuvenate Your Body and Mind
+        </h1>
+        <p
+          data-en="Professional massage therapy tailored to your unique wellness goals."
+          data-es="Terapia de masaje profesional adaptada a tus objetivos únicos de bienestar."
+        >
+          Professional massage therapy tailored to your unique wellness goals.
+        </p>
+        <a
+          href="#contact"
+          class="btn"
+          data-en="Book Now"
+          data-es="Reservar Ahora"
+          >Book Now</a
+        >
+      </div>
+    </section>
+
+    <section id="services" class="services-section">
+      <div class="container">
+        <h2 data-en="Our Services" data-es="Nuestros Servicios">
+          Our Services
+        </h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3 data-en="Swedish Massage" data-es="Masaje Sueco">
+              Swedish Massage
+            </h3>
+            <p
+              data-en="A gentle, full-body massage ideal for relaxation and stress relief."
+              data-es="Un masaje suave de cuerpo completo ideal para la relajación y el alivio del estrés."
+            >
+              A gentle, full-body massage ideal for relaxation and stress
+              relief.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3
+              data-en="Deep Tissue Massage"
+              data-es="Masaje de Tejido Profundo"
+            >
+              Deep Tissue Massage
+            </h3>
+            <p
+              data-en="Focuses on realigning deeper layers of muscles to relieve chronic tension."
+              data-es="Se enfoca en realinear las capas más profundas de los músculos para aliviar la tensión crónica."
+            >
+              Focuses on realigning deeper layers of muscles to relieve chronic
+              tension.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3 data-en="Sports Massage" data-es="Masaje Deportivo">
+              Sports Massage
+            </h3>
+            <p
+              data-en="Tailored to athletes to help prevent injuries, prepare for activities, or recover."
+              data-es="Adaptado a atletas para ayudar a prevenir lesiones, prepararse para actividades o recuperarse."
+            >
+              Tailored to athletes to help prevent injuries, prepare for
+              activities, or recover.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+      <div class="container">
+        <h2 data-en="Client Reviews" data-es="Reseñas de Clientes">
+          Client Reviews
+        </h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <p
+              class="review-text"
+              data-en="&ldquo;The best massage I have ever had. Truly professional and deeply relaxing.&rdquo;"
+              data-es="&ldquo;El mejor masaje que he tenido. Verdaderamente profesional y profundamente relajante.&rdquo;"
+            >
+              &ldquo;The best massage I have ever had. Truly professional and
+              deeply relaxing.&rdquo;
+            </p>
+            <p class="review-author">- Sarah M.</p>
+          </div>
+          <div class="review-card">
+            <p
+              class="review-text"
+              data-en="&ldquo;Helped immensely with my chronic lower back pain. Highly recommend Ulysses.&rdquo;"
+              data-es="&ldquo;Me ayudó muchísimo con mi dolor crónico de espalda baja. Recomiendo ampliamente a Ulysses.&rdquo;"
+            >
+              &ldquo;Helped immensely with my chronic lower back pain. Highly
+              recommend Ulysses.&rdquo;
+            </p>
+            <p class="review-author">- John D.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 data-en="Contact Us" data-es="Contáctanos">Contact Us</h2>
+        <p
+          class="contact-subtitle"
+          data-en="Have questions or want to schedule an appointment? Send us a message."
+          data-es="¿Tienes preguntas o deseas programar una cita? Envíanos un mensaje."
+        >
+          Have questions or want to schedule an appointment? Send us a message.
+        </p>
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name" data-en="Name" data-es="Nombre">Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email" data-en="Email" data-es="Correo Electrónico"
+              >Email</label
+            >
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message" data-en="Message" data-es="Mensaje"
+              >Message</label
+            >
+            <textarea id="message" rows="5" required></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-submit"
+            data-en="Send Message"
+            data-es="Enviar Mensaje"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        &copy; 2026 Ulysses Massage.
+        <span
+          data-en="All rights reserved."
+          data-es="Todos los derechos reservados."
+          >All rights reserved.</span
+        >
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>
