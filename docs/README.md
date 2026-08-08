@@ -4,7 +4,14 @@
 
 The Purpose of this project is to provide the massage therapy business "Ulysses Massage" with a website where customers can go to learn more about the business and its services.
 
-The color scheme of the website will be
+The color will be both in English and Spanish. The language will be able to be chnaged by means of a toggle on the right side of a sticky navbar.
+
+The color scheme of the website will be the following:
+
+- #f6f2e7 - background 1
+- #c8e7e3 - background 2
+- #2596be - color 1
+- #1e696f - color 2
 
 ## Desired Project Structure
 
