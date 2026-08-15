@@ -83,10 +83,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (bgVideo) {
+    bgVideo.play().catch(() => {});
+
     bgVideo.addEventListener("ended", () => {
       currentVideoIndex = (currentVideoIndex + 1) % videoList.length;
       bgVideo.src = videoList[currentVideoIndex];
-      bgVideo.play();
+      bgVideo.play().catch(() => {});
     });
   }
 
