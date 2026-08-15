@@ -1,19 +1,25 @@
 # Ulysses Massage - Website
 
-## Porject Description
+## Project Description
 
-The Purpose of this project is to provide the massage therapy business "Ulysses Massage" with a website where customers can go to learn more about the business and its services.
+The purpose of this project is to provide the massage spa Ulysses Massage with a website to showcase its services and contact information.
 
-The color will be both in English and Spanish. The language will be able to be chnaged by means of a toggle on the right side of a sticky navbar.
+The structure of the project is very simple. It will only use an HTML, CSS, and JS file. Version control will be handled by GitHub and hosting by Cloudflare.
 
-The color scheme of the website will be the following:
+It will consist of one single Home page with a sticky navbar at the top. The navbar will have links which correspond to the sections of the Home page: Home (top of the page, hero), About Us, Services, and Contact.
 
-- #f6f2e7 - background 1
-- #c8e7e3 - background 2
-- #2596be - color 1
-- #1e696f - color 2
+The default language of the website will be Spanish but there will a toggle that will allow you to shwitch between Spanish and English. Furthermore, upon entering the wesbsite for the first time. you will be prombted by means of a pop-up to select the language.
 
-## Current Project Structure
+The main page will also have videos in the background.
+
+Colors:
+
+- Teal: color 1
+- Navy Blue: color 2
+- Pastel white: background
+- Pastel gray: background
+
+## Project Structure
 
 ulymas-website/
 
@@ -22,34 +28,50 @@ ulymas-website/
   - README.md
 - frontend/
   - images/
-    - ulymas-logo.png
+    - favicon.ico
+    - ulymas-logo.svg
+    - ulymas-presentation.png
+  - videos/
+    - ulymas-bg-1.mp4
+    - ulymas-bg-2.mp4
+    - ulymas-bg-3.mp4
   - index.html
   - main.js
-  - style.cc
+  - style.css
 
 ## Workflow
 
-- [x] Introduce project to AI assitant.
-- [x] Determine structure, look, and basic features of website.
-- [x] Develop html.
-- [ ] Develop css.
-- [ ] Develop js.
+- [x] Make images folder and add image files.
+- [x] Make vidoes folder and add video files.
+- [x] Create empty index.html file.
+- [x] Create empty style.css file.
+- [x] Create empty main.js file.
+- [ ] Develop index.html file.
+  - [ ] Make header which consists of a navbar only.
+  - [ ] Make hero.
+  - [ ] Make footer.
+  - [ ] Make About Us section.
+  - [ ] Make Make Services section.
+  - [ ] Make Contact section.
+  - [ ] Add social media buttons.
+- [ ] Develop style.css
+- [ ] Implement videos in the background.
+- [ ] Use new GUI with translucent look.
+- [ ] Implement language toggle.
+- [ ] Implement language pop-up.
+- [ ] Scroll reveal animations per section.
+- [ ] Logo and name pop up after scrolling through 70% of the hero.
 - [ ] Optimize for mobile screens.
-- [ ] Add social media links.
-- [ ] Show more details on the reviews.
-- [ ] Make contact form actually functional.
-- [ ] Declare project as completed.
+- [ ] Declare project as finished.
 
-## AI Assitant Reminders
+## AI Reminders
 
-I will ocassionally share this text with you. The reasoning behind it is to allow you to remember the core project ideas and help you stay on track.
+The purpose of me sharing this with this AI chat is to remind the LLM of the aspects of the project that it may have forgotten.
 
-When asked to make an update on a file such as html, or css, for example, always provide the whole updated script afterwards even if the update was a tiny change. This makes copying and pasting a lot easier for me.
+When asked for a web file such a .html or .css file and/or an updated version of a web file, assume I am asking for the whole script. This makes things easier to copy and paste. Always populate the entire file script when asked about the update unless I specify otherwise.
 
-Don't leave any comments in the code.
+Don't leave any comments in the scripts.
 
-When this text is shared with you, always read what is in it, analyze it, see how it relates to your answers, and always respond with: "README received and processed!"
-
-You will not say anything else in response to the message where this README is shared. THE ONLY EXCEPTION is when I tell you to do or say something immediately bellow the "End of README.md" line in the same message, in which case you will say "README received and processed!" and then respond to whatever it was I told you bellow the "End of README.md" line.
+Respond to this message with "README.md received." to confirm that you have gone through the README and are ready to proceed. Do not answer or generate anything else unless otherwise specified bellow the "End of README.md" line in the same message.
 
 End of README.md
