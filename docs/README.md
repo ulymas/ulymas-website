@@ -46,14 +46,14 @@ ulymas-website/
 - [x] Create empty index.html file.
 - [x] Create empty style.css file.
 - [x] Create empty main.js file.
-- [ ] Develop index.html file.
-  - [ ] Make header which consists of a navbar only.
-  - [ ] Make hero.
-  - [ ] Make footer.
-  - [ ] Make About Us section.
-  - [ ] Make Make Services section.
-  - [ ] Make Contact section.
-  - [ ] Add social media buttons.
+- [x] Develop index.html file.
+  - [x] Make header which consists of a sticky navbar only.
+  - [x] Make hero.
+  - [x] Make footer.
+  - [x] Make About Us section.
+  - [x] Make Make Services section.
+  - [x] Make Contact section.
+  - [x] Add social media buttons.
 - [ ] Develop style.css
 - [ ] Implement videos in the background.
 - [ ] Use new GUI with translucent look.
