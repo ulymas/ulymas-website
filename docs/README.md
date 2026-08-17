@@ -69,7 +69,13 @@ ulymas-website/
 - [x] Change colors of title.
 - [x] Add actual flag images for pop-up and toggle.
 - [x] Add images to service cards.
-- [ ] Make the contact form functional.
+- [ ] Make the contact form functional using Web3Forms.
+  - [ ] The user can only submit if the name field has at least 2 alphabetic characters. If not, prompt user to "Please, enter a valid name."
+  - [ ] The user can only submit if either a valid email or phone number is present. If not, prompt user to "Please, enter a valid email or phone number."
+    - To check if a valid email has been entered, we will check if there is at least one period, and an @ character in the email field.
+    - In order to tell if the provided phone number is calid, we will check if there are at least 10 numeric characters in the phone number field.
+  - [ ] The user cannot submit form unless four aplhabetic characters have been written in message field. If not prompt user to "Please, let us know how we can help you".
+  - [ ] The Interested Service field is not a requirement to submit form.
 - [ ] Optimize for mobile screens.
   - [ ] Move language toggle to right.
   - [ ] Zoom out the videos.

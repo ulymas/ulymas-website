@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Primary Meta Tags -->
     <title>
       Ulysses Massage | Terapias Terapéuticas y a Domicilio en Ocala, FL
     </title>
@@ -14,7 +13,6 @@
     />
     <link rel="canonical" href="https://ulyssesmassage.com/" />
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ulyssesmassage.com/" />
     <meta
@@ -30,7 +28,6 @@
       content="https://ulyssesmassage.com/images/ulymas-presentation.png"
     />
 
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://ulyssesmassage.com/" />
     <meta
@@ -50,7 +47,6 @@
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
 
-    <!-- Schema.org LocalBusiness JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -84,7 +80,6 @@
     </script>
   </head>
   <body>
-    <!-- Background Video Layer structured for vertical scrolling reveal -->
     <div class="video-container">
       <div class="video-section">
         <video autoplay muted loop playsinline class="bg-video">
@@ -105,7 +100,6 @@
       </div>
     </div>
 
-    <!-- Initial Language Modal -->
     <div
       id="language-modal"
       class="modal"
@@ -135,7 +129,6 @@
       </div>
     </div>
 
-    <!-- Navigation -->
     <header>
       <nav class="navbar" aria-label="Navegación principal">
         <div class="nav-brand">
@@ -203,7 +196,6 @@
     </header>
 
     <main>
-      <!-- Hero Section -->
       <section id="hero" class="hero-section">
         <div class="hero-content">
           <img
@@ -228,7 +220,6 @@
         </div>
       </section>
 
-      <!-- About Us Section -->
       <section id="about" class="content-section">
         <div class="section-container">
           <h2 data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</h2>
@@ -262,7 +253,6 @@
         </div>
       </section>
 
-      <!-- Services Section -->
       <section id="services" class="content-section">
         <div class="section-container">
           <h2 data-es="Nuestros Servicios" data-en="Our Services">
@@ -358,7 +348,6 @@
         </div>
       </section>
 
-      <!-- Contact & Booking Section -->
       <section id="contact" class="content-section">
         <div class="section-container">
           <h2 data-es="Contacto" data-en="Contact Us">Contacto</h2>
@@ -428,14 +417,24 @@
             >
           </div>
 
-          <form id="contact-form" class="booking-form">
+          <form
+            id="contact-form"
+            class="booking-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="5ba50879-b283-4a7c-adcc-52bc6e9ca179"
+            />
+
             <div class="form-group">
               <label for="name" data-es="Nombre" data-en="Name">Nombre</label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                required
                 data-es-placeholder="Tu nombre"
                 data-en-placeholder="Your name"
                 placeholder="Tu nombre"
@@ -449,7 +448,6 @@
                 type="email"
                 id="email"
                 name="email"
-                required
                 data-es-placeholder="tu@email.com"
                 data-en-placeholder="your@email.com"
                 placeholder="tu@email.com"
@@ -476,15 +474,14 @@
               >
                 Servicio de Interés
               </label>
-              <select id="service" name="service" required>
+              <select id="service" name="service">
                 <option
                   value=""
-                  disabled
                   selected
-                  data-es="Selecciona un servicio"
-                  data-en="Select a service"
+                  data-es="Selecciona un servicio (opcional)"
+                  data-en="Select a service (optional)"
                 >
-                  Selecciona un servicio
+                  Selecciona un servicio (opcional)
                 </option>
                 <option
                   value="domicilio"
