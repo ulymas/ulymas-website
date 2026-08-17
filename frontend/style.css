@@ -299,12 +299,12 @@ header {
 }
 
 .title-ulysses {
-  color: var(--navy-blue);
+  color: var(--primary-teal);
   font-weight: 700;
 }
 
 .title-massage {
-  color: var(--primary-teal);
+  color: var(--navy-blue);
   font-weight: 400;
   letter-spacing: 0.5px;
 }
