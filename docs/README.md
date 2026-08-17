@@ -66,7 +66,7 @@ ulymas-website/
 - [x] Implement language pop-up.
 - [x] Scroll reveal animations per section.
 - [x] Logo and name pop up after scrolling through 70% of the hero.
-- [ ] Change colors of title.
+- [x] Change colors of title.
 - [ ] Add actual flag images for pop-up and toggle.
 - [ ] Add images to service cards.
 - [ ] Make the contact form functional.

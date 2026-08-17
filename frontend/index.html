@@ -3,12 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ulysses Massage</title>
+
+    <!-- Primary Meta Tags -->
+    <title>
+      Ulysses Massage | Terapias Terapéuticas y a Domicilio en Ocala, FL
+    </title>
+    <meta
+      name="description"
+      content="Masajes terapéuticos profesionales y a domicilio en Ocala, FL. Especialista en masaje relajante, tejido profundo, masaje sueco y terapia geotermal por Ulysses Silva, LMT."
+    />
+    <link rel="canonical" href="https://ulyssesmassage.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ulyssesmassage.com/" />
+    <meta
+      property="og:title"
+      content="Ulysses Massage | Relajación y Bienestar en Ocala, FL"
+    />
+    <meta
+      property="og:description"
+      content="Servicios de masaje profesional a domicilio y en estudio en Ocala, FL. Reserva tu consulta hoy."
+    />
+    <meta
+      property="og:image"
+      content="https://ulyssesmassage.com/images/ulymas-presentation.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ulyssesmassage.com/" />
+    <meta
+      property="twitter:title"
+      content="Ulysses Massage | Relajación y Bienestar en Ocala, FL"
+    />
+    <meta
+      property="twitter:description"
+      content="Servicios de masaje profesional a domicilio y en estudio en Ocala, FL."
+    />
+    <meta
+      property="twitter:image"
+      content="https://ulyssesmassage.com/images/ulymas-presentation.png"
+    />
+
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
+
+    <!-- Schema.org LocalBusiness JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HealthAndBeautyBusiness",
+        "name": "Ulysses Massage",
+        "image": "https://ulyssesmassage.com/images/ulymas-presentation.png",
+        "@id": "https://ulyssesmassage.com/",
+        "url": "https://ulyssesmassage.com/",
+        "telephone": "+18133256717",
+        "email": "info@ulyssesmassage.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "5598 SW 128th Pl",
+          "addressLocality": "Ocala",
+          "addressRegion": "FL",
+          "postalCode": "34473",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 29.0125,
+          "longitude": -82.1643
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Ulysses Silva",
+          "jobTitle": "Licensed Massage Therapist (LMT)"
+        }
+      }
+    </script>
   </head>
   <body>
+    <!-- Background Video Layer -->
     <div class="video-container">
       <div class="video-section">
         <video autoplay muted loop playsinline class="bg-video">
@@ -29,34 +105,55 @@
       </div>
     </div>
 
-    <div id="language-modal" class="modal">
+    <!-- Initial Language Modal -->
+    <div
+      id="language-modal"
+      class="modal"
+      role="dialog"
+      aria-labelledby="modal-title"
+    >
       <div class="modal-content">
-        <h2>Selecciona tu idioma / Select your language</h2>
+        <h2 id="modal-title">Selecciona tu idioma / Select your language</h2>
         <div class="modal-buttons">
           <button id="select-es" class="lang-btn">
-            <span class="flag-icon">🇪🇸</span> Español
+            <img
+              src="https://flagcdn.com/w40/es.png"
+              alt="Bandera de España"
+              class="flag-icon"
+            />
+            Español
           </button>
           <button id="select-en" class="lang-btn">
-            <span class="flag-icon">🇬🇧</span> English
+            <img
+              src="https://flagcdn.com/w40/gb.png"
+              alt="United Kingdom Flag"
+              class="flag-icon"
+            />
+            English
           </button>
         </div>
       </div>
     </div>
 
+    <!-- Navigation -->
     <header>
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Navegación principal">
         <div class="nav-brand">
-          <a href="#hero" class="nav-brand-glass">
+          <a
+            href="#hero"
+            class="nav-brand-glass"
+            aria-label="Ulysses Massage Inicio"
+          >
             <img
               src="images/ulymas-logo.svg"
               alt="Ulysses Massage Logo"
               id="nav-logo"
               class="hidden"
             />
-            <span id="nav-title" class="hidden"
-              ><span class="title-ulysses">Ulysses</span>
-              <span class="title-massage">Massage</span></span
-            >
+            <span id="nav-title" class="hidden">
+              <span class="title-ulysses">Ulysses</span>
+              <span class="title-massage">Massage</span>
+            </span>
           </a>
         </div>
         <ul class="nav-links">
@@ -79,14 +176,25 @@
               type="checkbox"
               id="lang-toggle-checkbox"
               class="toggle-checkbox"
+              aria-label="Cambiar idioma / Change language"
             />
             <label for="lang-toggle-checkbox" class="toggle-label">
-              <span class="toggle-option"
-                ><span class="flag-icon">🇪🇸</span> ES</span
-              >
-              <span class="toggle-option"
-                ><span class="flag-icon">🇬🇧</span> EN</span
-              >
+              <span class="toggle-option">
+                <img
+                  src="https://flagcdn.com/w40/es.png"
+                  alt="Bandera de España"
+                  class="flag-icon"
+                />
+                ES
+              </span>
+              <span class="toggle-option">
+                <img
+                  src="https://flagcdn.com/w40/gb.png"
+                  alt="United Kingdom Flag"
+                  class="flag-icon"
+                />
+                EN
+              </span>
               <span class="toggle-slider"></span>
             </label>
           </div>
@@ -95,6 +203,7 @@
     </header>
 
     <main>
+      <!-- Hero Section -->
       <section id="hero" class="hero-section">
         <div class="hero-content">
           <img
@@ -113,11 +222,13 @@
             class="hero-phone-btn"
             data-es="Llama ahora: 813-325-6717"
             data-en="Call now: 813-325-6717"
-            >Llama ahora: 813-325-6717</a
           >
+            Llama ahora: 813-325-6717
+          </a>
         </div>
       </section>
 
+      <!-- About Us Section -->
       <section id="about" class="content-section">
         <div class="section-container">
           <h2 data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</h2>
@@ -151,6 +262,7 @@
         </div>
       </section>
 
+      <!-- Services Section -->
       <section id="services" class="content-section">
         <div class="section-container">
           <h2 data-es="Nuestros Servicios" data-en="Our Services">
@@ -158,6 +270,11 @@
           </h2>
           <div class="services-grid">
             <div class="service-card">
+              <img
+                src="images/service-card-at-home.png"
+                alt="Masajes a Domicilio en Ocala"
+                class="service-img"
+              />
               <h3 data-es="Masajes a Domicilio" data-en="In-Home Massages">
                 Masajes a Domicilio
               </h3>
@@ -170,6 +287,11 @@
               </p>
             </div>
             <div class="service-card">
+              <img
+                src="images/service-card-relaxing.png"
+                alt="Masaje Relajante"
+                class="service-img"
+              />
               <h3 data-es="Masaje Relajante" data-en="Relaxing Massage">
                 Masaje Relajante
               </h3>
@@ -182,6 +304,11 @@
               </p>
             </div>
             <div class="service-card">
+              <img
+                src="images/service-card-deep-tissue.png"
+                alt="Masaje Profundo"
+                class="service-img"
+              />
               <h3 data-es="Masaje Profundo" data-en="Deep Tissue Massage">
                 Masaje Profundo
               </h3>
@@ -194,6 +321,11 @@
               </p>
             </div>
             <div class="service-card">
+              <img
+                src="images/service-card-swedish.png"
+                alt="Masaje Sueco Terapéutico"
+                class="service-img"
+              />
               <h3 data-es="Masaje Sueco" data-en="Swedish Massage">
                 Masaje Sueco
               </h3>
@@ -206,6 +338,11 @@
               </p>
             </div>
             <div class="service-card">
+              <img
+                src="images/service-card-stones.png"
+                alt="Terapia Geotermal con Piedras Calientes"
+                class="service-img"
+              />
               <h3 data-es="Terapia Geotermal" data-en="Geothermal Therapy">
                 Terapia Geotermal
               </h3>
@@ -221,6 +358,7 @@
         </div>
       </section>
 
+      <!-- Contact & Booking Section -->
       <section id="contact" class="content-section">
         <div class="section-container">
           <h2 data-es="Contacto" data-en="Contact Us">Contacto</h2>
@@ -232,15 +370,27 @@
           </p>
           <div class="contact-info">
             <p>
-              <strong
-                ><span data-es="Dirección:" data-en="Address:"
-                  >Dirección:</span
-                ></strong
+              <strong>
+                <span data-es="Dirección:" data-en="Address:">Dirección:</span>
+              </strong>
+              <a
+                href="https://maps.google.com/?q=5598+SW+128th+Pl,+Ocala,+FL+34473"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-              5598 SW 128th Pl, Ocala, FL 34473
+                5598 SW 128th Pl, Ocala, FL 34473
+              </a>
             </p>
-            <p><strong>Email:</strong> info@ulyssesmassage.com</p>
-            <p><strong>Tel:</strong> 813-325-6717</p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:info@ulyssesmassage.com"
+                >info@ulyssesmassage.com</a
+              >
+            </p>
+            <p>
+              <strong>Tel:</strong>
+              <a href="tel:8133256717">813-325-6717</a>
+            </p>
             <p
               class="service-location"
               data-es="También ofrecemos servicio a domicilio en ubicaciones dentro de Ocala."
@@ -250,10 +400,32 @@
               Ocala.
             </p>
           </div>
+
           <div class="social-media">
-            <a href="#" class="social-icon" aria-label="Facebook">Facebook</a>
-            <a href="#" class="social-icon" aria-label="Instagram">Instagram</a>
-            <a href="#" class="social-icon" aria-label="WhatsApp">WhatsApp</a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+              aria-label="Facebook"
+              >Facebook</a
+            >
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+              aria-label="Instagram"
+              >Instagram</a
+            >
+            <a
+              href="https://wa.me/18133256717"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+              aria-label="WhatsApp"
+              >WhatsApp</a
+            >
           </div>
 
           <form id="contact-form" class="booking-form">
@@ -264,6 +436,8 @@
                 id="name"
                 name="name"
                 required
+                data-es-placeholder="Tu nombre"
+                data-en-placeholder="Your name"
                 placeholder="Tu nombre"
               />
             </div>
@@ -276,6 +450,8 @@
                 id="email"
                 name="email"
                 required
+                data-es-placeholder="tu@email.com"
+                data-en-placeholder="your@email.com"
                 placeholder="tu@email.com"
               />
             </div>
@@ -287,6 +463,8 @@
                 type="tel"
                 id="phone"
                 name="phone"
+                data-es-placeholder="813-325-6717"
+                data-en-placeholder="813-325-6717"
                 placeholder="813-325-6717"
               />
             </div>
@@ -295,8 +473,9 @@
                 for="service"
                 data-es="Servicio de Interés"
                 data-en="Interested Service"
-                >Servicio de Interés</label
               >
+                Servicio de Interés
+              </label>
               <select id="service" name="service" required>
                 <option
                   value=""
@@ -355,6 +534,8 @@
                 id="message"
                 name="message"
                 rows="4"
+                data-es-placeholder="¿Tienes alguna preferencia de fecha o consulta?"
+                data-en-placeholder="Do you have any preferred dates or inquiries?"
                 placeholder="¿Tienes alguna preferencia de fecha o consulta?"
               ></textarea>
             </div>
@@ -378,19 +559,21 @@
           <span
             data-es="Todos los derechos reservados."
             data-en="All rights reserved."
-            >Todos los derechos reservados.</span
           >
+            Todos los derechos reservados.
+          </span>
         </p>
         <p>
-          <span data-es="Desarrollado por" data-en="Developed by"
-            >Desarrollado por</span
-          >
+          <span data-es="Desarrollado por" data-en="Developed by">
+            Desarrollado por
+          </span>
           <a
             href="https://septimacodex.com"
             target="_blank"
             rel="noopener noreferrer"
-            >Septima Codex Technologies</a
           >
+            Septima Codex Technologies
+          </a>
         </p>
       </div>
     </footer>
