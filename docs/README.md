@@ -69,6 +69,7 @@ ulymas-website/
 - [ ] Change colors of title.
 - [ ] Add actual flag images for pop-up and toggle.
 - [ ] Add images to service cards.
+- [ ] Make the contact form functional.
 - [ ] Optimize for mobile screens.
   - [ ] Move language toggle to right.
   - [ ] Zoom out of videos.
