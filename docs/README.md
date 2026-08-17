@@ -29,6 +29,11 @@ ulymas-website/
 - frontend/
   - images/
     - favicon.ico
+    - service-card-at-home.png
+    - service-card-deep-tissue.png
+    - service-card-relaxing.png
+    - service-card-stones.png
+    - service-card-swedish.png
     - ulymas-logo.svg
     - ulymas-presentation.png
   - videos/
@@ -61,7 +66,12 @@ ulymas-website/
 - [x] Implement language pop-up.
 - [x] Scroll reveal animations per section.
 - [x] Logo and name pop up after scrolling through 70% of the hero.
-- [x] Optimize for mobile screens.
+- [ ] Change colors of title.
+- [ ] Add actual flag images for pop-up and toggle.
+- [ ] Add images to service cards.
+- [ ] Optimize for mobile screens.
+  - [ ] Move language toggle to right.
+  - [ ] Zoom out of videos.
 - [ ] Declare project as finished.
 
 ## AI Reminders
