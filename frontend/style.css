@@ -585,15 +585,18 @@ header {
   text-align: justify;
 }
 
-/* Services Grid & Image Styling */
+/* Services Grid & Image Styling (Updated for Centering) */
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .service-card {
+  flex: 1 1 260px;
+  max-width: 320px;
   background: rgba(15, 23, 42, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-left: 4px solid var(--primary-teal);
