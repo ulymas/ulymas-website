@@ -48,13 +48,13 @@ body {
   position: relative;
 }
 
-/* Background Video Layout (Fixed Position for Scrolling) */
+/* Background Video Layout (Full Document Height for Natural Scrolling) */
 .video-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: -2;
   display: flex;
   flex-direction: column;
@@ -297,7 +297,7 @@ header {
 }
 
 .title-ulysses {
-  color: #ffffff;
+  color: var(--navy-blue);
   font-weight: 700;
 }
 
@@ -307,10 +307,7 @@ header {
   letter-spacing: 0.5px;
 }
 
-.nav-brand-glass.hidden,
-.nav-brand-glass:has(.hidden),
-.nav-brand-glass #nav-logo.hidden,
-.nav-brand-glass #nav-title.hidden {
+.nav-brand-glass.hidden {
   opacity: 0;
   transform: translateY(-10px);
   pointer-events: none;
@@ -585,7 +582,7 @@ header {
   text-align: justify;
 }
 
-/* Services Grid & Image Styling (Updated for Centering) */
+/* Services Grid & Image Styling */
 .services-grid {
   display: flex;
   flex-wrap: wrap;

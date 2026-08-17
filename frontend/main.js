@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     video.play().catch(() => {});
   });
 
-  window.addEventListener("scroll", () => {
+  function checkScroll() {
     if (heroSection && navLogo && navTitle) {
       const heroHeight = heroSection.offsetHeight;
       const scrollPosition = window.scrollY;
@@ -91,7 +91,10 @@ document.addEventListener("DOMContentLoaded", () => {
         navTitle.classList.add("hidden");
       }
     }
-  });
+  }
+
+  window.addEventListener("scroll", checkScroll, { passive: true });
+  checkScroll(); // Initial check on load in case page is refreshed while scrolled down
 
   const observerOptions = {
     root: null,
