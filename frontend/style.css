@@ -228,6 +228,7 @@ header {
 #nav-logo {
   height: 32px;
   width: auto;
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.9));
   transition:
     opacity 0.4s ease,
     transform 0.4s ease;
@@ -405,7 +406,8 @@ header {
 .hero-img {
   max-width: 280px;
   height: auto;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.85))
+    drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
 }
 
 .hero-content p {
