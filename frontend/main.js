@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("language-modal");
   const selectEs = document.getElementById("select-es");
   const selectEn = document.getElementById("select-en");
-  const toggleLangBtn = document.getElementById("toggle-lang");
+  const langToggleCheckbox = document.getElementById("lang-toggle-checkbox");
   const navLogo = document.getElementById("nav-logo");
   const navTitle = document.getElementById("nav-title");
   const heroSection = document.getElementById("hero");
@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     currentLang = lang;
     document.documentElement.lang = lang;
 
-    if (toggleLangBtn) {
-      toggleLangBtn.textContent = lang === "es" ? "EN" : "ES";
+    if (langToggleCheckbox) {
+      langToggleCheckbox.checked = lang === "en";
     }
 
     const translatableElements =
@@ -68,10 +68,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  if (toggleLangBtn) {
-    toggleLangBtn.addEventListener("click", () => {
-      const newLang = currentLang === "es" ? "en" : "es";
-      setLanguage(newLang);
+  if (langToggleCheckbox) {
+    langToggleCheckbox.addEventListener("change", (e) => {
+      setLanguage(e.target.checked ? "en" : "es");
     });
   }
 
