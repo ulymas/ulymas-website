@@ -8,15 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLogo = document.getElementById("nav-logo");
   const navTitle = document.getElementById("nav-title");
   const heroSection = document.getElementById("hero");
-  const bgVideo = document.getElementById("bg-video");
   const contactForm = document.getElementById("contact-form");
-
-  const videoList = [
-    "videos/ulymas-bg-1.mp4",
-    "videos/ulymas-bg-2.mp4",
-    "videos/ulymas-bg-3.mp4",
-  ];
-  let currentVideoIndex = 0;
+  const bgVideos = document.querySelectorAll(".bg-video");
 
   function setLanguage(lang) {
     currentLang = lang;
@@ -82,15 +75,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  if (bgVideo) {
-    bgVideo.play().catch(() => {});
-
-    bgVideo.addEventListener("ended", () => {
-      currentVideoIndex = (currentVideoIndex + 1) % videoList.length;
-      bgVideo.src = videoList[currentVideoIndex];
-      bgVideo.play().catch(() => {});
-    });
-  }
+  bgVideos.forEach((video) => {
+    video.play().catch(() => {});
+  });
 
   window.addEventListener("scroll", () => {
     if (heroSection && navLogo && navTitle) {

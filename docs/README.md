@@ -54,14 +54,14 @@ ulymas-website/
   - [x] Make Make Services section.
   - [x] Make Contact section.
   - [x] Add social media buttons.
-- [ ] Develop style.css
-- [ ] Implement videos in the background.
-- [ ] Use new GUI with translucent look.
-- [ ] Implement language toggle.
-- [ ] Implement language pop-up.
-- [ ] Scroll reveal animations per section.
-- [ ] Logo and name pop up after scrolling through 70% of the hero.
-- [ ] Optimize for mobile screens.
+- [x] Develop style.css
+- [x] Implement videos in the background.
+- [x] Use new GUI with translucent look.
+- [x] Implement language toggle.
+- [x] Implement language pop-up.
+- [x] Scroll reveal animations per section.
+- [x] Logo and name pop up after scrolling through 70% of the hero.
+- [x] Optimize for mobile screens.
 - [ ] Declare project as finished.
 
 ## AI Reminders

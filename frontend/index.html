@@ -10,9 +10,23 @@
   </head>
   <body>
     <div class="video-container">
-      <video autoplay muted playsinline id="bg-video">
-        <source src="videos/ulymas-bg-1.mp4" type="video/mp4" />
-      </video>
+      <div class="video-section">
+        <video autoplay muted loop playsinline class="bg-video">
+          <source src="videos/ulymas-bg-1.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="video-separator"></div>
+      <div class="video-section">
+        <video autoplay muted loop playsinline class="bg-video">
+          <source src="videos/ulymas-bg-2.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="video-separator"></div>
+      <div class="video-section">
+        <video autoplay muted loop playsinline class="bg-video">
+          <source src="videos/ulymas-bg-3.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
 
     <div id="language-modal" class="modal">
@@ -64,9 +78,6 @@
             alt="Ulysses Massage Presentation"
             class="hero-img"
           />
-          <h1 data-es="Ulysses Massage" data-en="Ulysses Massage">
-            Ulysses Massage
-          </h1>
           <p
             data-es="Tu espacio de relajación y bienestar"
             data-en="Your sanctuary for relaxation and wellness"
