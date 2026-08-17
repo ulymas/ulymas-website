@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   let currentLang = "es";
+  const LANG_STORAGE_KEY = "ulysses_lang_pref";
 
   const modal = document.getElementById("language-modal");
   const selectEs = document.getElementById("select-es");
   const selectEn = document.getElementById("select-en");
   const langToggleCheckbox = document.getElementById("lang-toggle-checkbox");
-  const navLogo = document.getElementById("nav-logo");
-  const navTitle = document.getElementById("nav-title");
+  const navBrand = document.querySelector(".nav-brand-glass");
   const heroSection = document.getElementById("hero");
   const contactForm = document.getElementById("contact-form");
   const bgVideos = document.querySelectorAll(".bg-video");
@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
   function setLanguage(lang) {
     currentLang = lang;
     document.documentElement.lang = lang;
+
+    // Save their preference to the browser
+    localStorage.setItem(LANG_STORAGE_KEY, lang);
 
     if (langToggleCheckbox) {
       langToggleCheckbox.checked = lang === "en";
@@ -54,6 +57,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // --- LOCAL STORAGE CHECK ---
+  const savedLang = localStorage.getItem(LANG_STORAGE_KEY);
+  if (savedLang) {
+    setLanguage(savedLang);
+    closeModal();
+  }
+
   if (selectEs) {
     selectEs.addEventListener("click", () => {
       setLanguage("es");
@@ -79,16 +89,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function checkScroll() {
-    if (heroSection && navLogo && navTitle) {
+    if (heroSection && navBrand) {
       const heroHeight = heroSection.offsetHeight;
       const scrollPosition = window.scrollY;
 
       if (scrollPosition >= heroHeight * 0.7) {
-        navLogo.classList.remove("hidden");
-        navTitle.classList.remove("hidden");
+        navBrand.classList.remove("hidden");
       } else {
-        navLogo.classList.add("hidden");
-        navTitle.classList.add("hidden");
+        navBrand.classList.add("hidden");
       }
     }
   }

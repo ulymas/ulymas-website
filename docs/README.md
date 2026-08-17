@@ -67,12 +67,12 @@ ulymas-website/
 - [x] Scroll reveal animations per section.
 - [x] Logo and name pop up after scrolling through 70% of the hero.
 - [x] Change colors of title.
-- [ ] Add actual flag images for pop-up and toggle.
-- [ ] Add images to service cards.
+- [x] Add actual flag images for pop-up and toggle.
+- [x] Add images to service cards.
 - [ ] Make the contact form functional.
 - [ ] Optimize for mobile screens.
   - [ ] Move language toggle to right.
-  - [ ] Zoom out of videos.
+  - [ ] Zoom out the videos.
 - [ ] Declare project as finished.
 
 ## AI Reminders
